@@ -87,15 +87,18 @@
                 document.getElementById("a2").innerHTML = ('The computer picked ' + computerType + '!');
                 switch (winner) {
                     case 'tie':
+                        alert(userName + ', you picked ' + userType + '!\nThe computer picked ' + computerType + '!\nIt\'s a tie!');
                         console.log("It's a tie!");
                         document.getElementById("a3").innerHTML = ("It's a tie!");
                         break;
                     case 'user':
                         console.log("You win!");
+                        alert(userName + ', you picked ' + userType + '!\nThe computer picked ' + computerType + '!\nYou win!');
                         document.getElementById("a3").innerHTML = ("You win!");
                         break;
                     case 'computer':
                         console.log("You lose!");
+                        alert(userName + ', you picked ' + userType + '!\nThe computer picked ' + computerType + '!\nYou lose!');
                         document.getElementById("a3").innerHTML = ("You lose!");
                         break;
                 }
